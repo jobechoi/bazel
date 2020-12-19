@@ -171,14 +171,14 @@ representation of the dependency graph (run the command at the workspace root):
 bazel query  --notool_deps --noimplicit_deps "deps(//:ProjectRunner)" --output graph
 ```
 
-The above command tells Bazel to look for all dependencies for the target
+The command above tells Bazel to look for all dependencies for the target
 `//:ProjectRunner` (excluding host and implicit dependencies) and format the
 output as a graph.
 
-Then, paste the text into [GraphViz](http://www.webgraphviz.com/).
+Then, paste a copy of the grpah text from your terminal into [GraphViz](http://www.webgraphviz.com/).
 
 
-As you can see, the project has a single target that build two source files with
+As you can see, the project has a single target that builds two source files with
 no additional dependencies:
 
 ![Dependency graph of the target 'ProjectRunner'](/assets/tutorial_java_01.svg)
